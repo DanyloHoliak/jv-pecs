@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MachineServiceImpl<T extends Machine> implements MachineService<T> {
+
     @Override
     public List<T> getAll(Class<? extends T> type) {
         MachineProducer<T> producer;
