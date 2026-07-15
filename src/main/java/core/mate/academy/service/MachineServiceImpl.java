@@ -20,7 +20,7 @@ public class MachineServiceImpl<T extends Machine> implements MachineService<T> 
             machines = new TruckProducer().get();
         } else if (type == Excavator.class) {
             machines = new ExcavatorProducer().get();
-        }else {
+        } else {
             return new ArrayList<>();
         }
         return (List<T>) new ArrayList<>(machines);
